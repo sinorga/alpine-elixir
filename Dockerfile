@@ -1,12 +1,12 @@
-FROM bitwalker/alpine-erlang:latest
+FROM bitwalker/alpine-erlang:20.0
 
-MAINTAINER Paul Schoenfelder <paulschoenfelder@gmail.com>
+MAINTAINER Orga Shih <orga.shih@gmail.com>
 
 # Important!  Update this no-op ENV variable when this Dockerfile
 # is updated with the current date. It will force refresh of all
 # of the base images and things like `apt-get update` won't be using
 # old cached versions when the Dockerfile is built.
-ENV REFRESHED_AT=2017-05-31 \
+ENV REFRESHED_AT=2017-06-28 \
     ELIXIR_VERSION=v1.4.4
 
 WORKDIR /tmp/elixir-build

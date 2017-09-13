@@ -1,4 +1,4 @@
-FROM bitwalker/alpine-erlang:20.0
+FROM sinorga/alpine-erlang:19.3.4-DBG
 
 MAINTAINER Orga Shih <orga.shih@gmail.com>
 
@@ -6,8 +6,8 @@ MAINTAINER Orga Shih <orga.shih@gmail.com>
 # is updated with the current date. It will force refresh of all
 # of the base images and things like `apt-get update` won't be using
 # old cached versions when the Dockerfile is built.
-ENV REFRESHED_AT=2017-06-28 \
-    ELIXIR_VERSION=v1.4.4
+ENV REFRESHED_AT=2017-08-10 \
+    ELIXIR_VERSION=v1.4.5
 
 WORKDIR /tmp/elixir-build
 
